@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="StyleLista.css">
+</head>
+<body>
+    <div class="contenedor-tareas">
+        <h2 class="titulo-tareas">Lista de Tareas</h2>
+        <form id="formulario-tarea">
+            <input type="text" id="entrada-tarea" placeholder="Escribe la nueva tarea" required>
+            
+            <div class="prioridad">
+                <label for="alto">Alto</label>
+                <input type="checkbox" id="alto" name="prioridad">
+                <label for="bajo">Bajo</label>
+                <input type="checkbox" id="bajo" name="prioridad">
+            </div>
+            
+            <button type="submit" class="boton-agregar">Agregar Tarea</button>
+        </form>
+        
+        <div class="contenedor-lista">
+            <h3>Alto</h3>
+            <ul id="lista-tareas-alto" class="lista-tareas"></ul>
+        </div>
+        
+        <div class="contenedor-lista">
+            <h3>Bajo</h3>
+            <ul id="lista-tareas-bajo" class="lista-tareas"></ul>
+        </div>
+    </div>
+
+    <script src="JSLista.js"></script>
+</body>
+</html>

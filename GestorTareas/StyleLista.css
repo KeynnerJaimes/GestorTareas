@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.contenedor-tareas {
+    width: 400px;
+    height: 500px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #00a24b;
+}
+
+.titulo-tareas {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00a24b;
+}
+
+#formulario-tarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#entrada-tarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #00a24b;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.boton-agregar {
+    padding: 10px 15px;
+    background-color: #00a24b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.boton-agregar:hover {
+    background-color: #007c3b;
+}
+
+.prioridad {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.prioridad label {
+    font-size: 16px;
+}
+
+.contenedor-lista {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    border-top: 1px solid #00a24b;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.lista-tareas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.elemento-tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f9f4;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    color: #000000b4;
+}
+
+.elemento-tarea.completada {
+    background-color: #00d13b7a;
+}
+
+.boton-completar,
+.boton-eliminar {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-completar {
+    background-color: #00a228;
+    color: #fff;
+}
+
+.boton-completar:hover {
+    background-color: #007c3b;
+}
+
+.boton-eliminar {
+    background-color: #ff6f61;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.boton-eliminar:hover {
+    background-color: #e44a3f;
+}
+
+.contenedor-lista h3 {
+    font-size: 20px;
+    color: #00a24b;
+    margin-bottom: 10px;
+}
